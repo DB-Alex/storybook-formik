@@ -82,6 +82,7 @@ const injectCss = `.${stateContainerClass} > ul {
     height: 100% !important;
     margin: 0 !important;
     overflow-y: scroll !important;
+    background-color: none !important;
   }`;
 
 const eightiesTheme = {
