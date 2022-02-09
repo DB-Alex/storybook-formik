@@ -78,11 +78,17 @@ const style: { [key: string]: CSSProperties } = {
 // because JSONTree styling is limited
 const classRoot = 'formik-';
 const stateContainerClass = `${classRoot}stateContainer`;
-const injectCss = `.${stateContainerClass} > ul {
+const injectCss = `
+  .${stateContainerClass} > h1 {
+    padding: 0.25em 0.5em !important;
+  }
+  .${stateContainerClass} > ul {
     height: 100% !important;
     margin: 0 !important;
     overflow-y: scroll !important;
-  }`;
+    background-color: transparent !important;
+  }
+`;
 
 const eightiesTheme = {
   scheme: 'eighties',
